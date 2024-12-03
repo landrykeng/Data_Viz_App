@@ -48,7 +48,8 @@ def load_data(excel_path, shapefile_path):
 excel_path = "Indicateur.xlsx"
 shapefile_path = "C:/Users/BRAND MASTER TECH/Desktop/Concours Data_Viz/streamlit_apk/GeoData2023.shp"
 
-data, geo_Africa_df = load_data(excel_path, shapefile_path)
+shapefile_url = 'https://drive.google.com/file/d/1igotHPU81SF-BrOhXZip2Xm8oJiHYonF/view?usp=sharing' 
+data, geo_Africa_df = load_data(excel_path, shapefile_url)
 
 st.sidebar.image("Logo.png") # Remplacez par le chemin de votre logo
 st.sidebar.title("Membre de l'Equipe")
